@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+﻿namespace Basic_Core_Progams
+{
+    internal class Program
+    {
+       
+        static void Main(string[] args)
+        {
+
+            Vowels vowel = new Vowels();
+            vowel.getVowelConsonant();
+
+        }
+    }
+=======
+>>>>>>> FinalApp
 ﻿namespace Basic_Core_Progams
 {
     internal class Program
@@ -123,4 +141,8 @@
 
 }
     }
+<<<<<<< HEAD
+=======
+>>>>>>> main
+>>>>>>> FinalApp
 }
