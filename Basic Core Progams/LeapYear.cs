@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,15 +8,15 @@ namespace Basic_Core_Progams
 {
     internal class LeapYear
     {
-        public static void LeapYearPrgoram()       //Created method
+        public static void getLeapYear()                     //Created method
         {
-            Console.WriteLine("Please enter year");         //Getting user input
-            int Year = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Please enter year :");                          //Getting user input
+            int iYr = Convert.ToInt32(Console.ReadLine());
 
-            if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0))         //Giving conditions to check
-                Console.WriteLine("The {0} is leap year", Year);
+            if (((iYr % 4 == 0) && (iYr % 100 != 0)) || (iYr % 400 == 0))         //Giving conditions to check
+            { Console.WriteLine("The {0} is leap year", iYr); }
             else
-                Console.WriteLine("The {0} is not leap year", Year);
+            { Console.WriteLine("The {0} is not leap year",iYr);}
         }
     }
 }
