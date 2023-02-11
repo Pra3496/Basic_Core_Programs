@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Basic_Core_Progams
 {
-    internal class QuoitRem
+    internal class QuoitAndReminder
     {
-        public static void findingQuotientNumber()          //Creating method
+        public void getQuotientAndReminder()                             //Creating method
         {
             Console.WriteLine("Please enter value for Dividend");       //Taking user input for dividand
             int dividend = Convert.ToInt32(Console.ReadLine());
