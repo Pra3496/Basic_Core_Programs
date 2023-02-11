@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,22 +8,22 @@ namespace Basic_Core_Progams
 {
     internal class LargestNumber
     {
-        public static void largestNumber()          //Creating method
+        public void getLargestNumber()          //Creating method
         {
             //Taking user input
             Console.WriteLine("Please enter input");
-            int a = Convert.ToInt32(Console.ReadLine());
+            int iNo = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter input");
-            int b = Convert.ToInt32(Console.ReadLine());
+            int iNo2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter input");
-            int c = Convert.ToInt32(Console.ReadLine());
+            int iNo3 = Convert.ToInt32(Console.ReadLine());
 
-            if (a > b && a > c)         //If statement for checking condition
-                Console.WriteLine("The number {0} is largest of all", a);
-            else if (b > c)
-                Console.WriteLine("The number {0} is largest of all", b);
+            if (iNo > iNo2 && iNo > iNo3)         //If statement for checking condition
+            { Console.WriteLine("The number {0} is largest of all", iNo); }
+            else if (iNo2 > iNo3)
+            { Console.WriteLine("The number {0} is largest of all", iNo2); }
             else
-                Console.WriteLine("The number {0} is largest of all", c);
+            { Console.WriteLine("The number {0} is largest of all", iNo3); }
         }
     }
 }
