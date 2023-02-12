@@ -1,27 +1,7 @@
-<<<<<<< HEAD
-﻿namespace Basic_Core_Progams
-{
-    internal class Program
-    {
-       
-        static void Main(string[] args)
-        {
 
-            Vowels vowel = new Vowels();
-            vowel.getVowelConsonant();
-
-        }
-    }
-=======
-﻿namespace Basic_Core_Progams
+namespace Basic_Core_Progams
 {
-    internal class Program
-    {
-       
-        static void Main(string[] args)
-        {
-            namespace Basic_Core_Progams
-    {
+     
         internal class Program
         {
 
@@ -37,7 +17,7 @@
                     Console.WriteLine("***********|  WEL-COME TO BASIC CORE PROGRAMS Application  |***********");
                     Console.WriteLine("***********************************************************************");
                     Console.WriteLine("*********************  OPTIONS ARE FOLLOWING  *************************\n");
-                    Console.WriteLine("1:FlipCoin\n2:LeapYear\n3:PowerOfTwo\n4:Harmonics\n5:Factors\n6:QuotientAndRemainder\n7:SwapTwoNumbers\n8:EvenOddNumber\n9:VowelConsonant\n10:LargestNumber\n11:Prime Factorization");
+                    Console.WriteLine("1:FlipCoin\n2:LeapYear\n3:PowerOfTwo\n4:Harmonics\n5:Factors\n6:QuotientAndRemainder\n7:SwapTwoNumbers\n8:EvenOddNumber\n9:VowelConsonant\n10:LargestNumber");
                     Console.WriteLine("\n*************************|  END OF OPTIONS  |*************************");
                     Console.Write("Enter the Option : ");
                     int option = Convert.ToInt32(Console.ReadLine());
@@ -134,9 +114,5 @@
                 }
             }
         }
-    }
-
-}
-    }
->>>>>>> main
+ 
 }
