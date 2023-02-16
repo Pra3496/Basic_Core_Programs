@@ -8,7 +8,34 @@ namespace Basic_Core_Progams
 {
     internal class FlipCoin
     {
-        public static void getFlipCoin()      //Method created
+        private int tail_count1;
+
+        private int head_count1;
+
+        private double tail_percentage1;
+
+        private double head_percentage1;
+        
+        public int getTailCnt()
+        {
+            return this.tail_count1;
+        }
+
+        public int getHeadCnt()
+        {
+            return this.head_count1;
+        }
+
+        public double getTailPer()
+        {
+            return this.tail_percentage1;
+        }
+
+        public double getHeadPer()
+        {
+            return this.head_percentage1;
+        }
+        public void getFlipCoin()      //Method created
         {
             int tail_count = 0, head_count = 0;       //Initialise values
             Console.Write("Number of times to the flipcoin : ");       //Getting  number of count head and tail
@@ -27,10 +54,16 @@ namespace Basic_Core_Progams
                     head_count++;
                 }
             }
-            Console.WriteLine("TailCount:{0} and HeadCount:{1}",tail_count,head_count);
+            tail_count1 = tail_count;
+            head_count1 = head_count;
+
+
+            
             double tail_percentage = (tail_count * 100) / iNo;      //Percentage calculating 
             double head_percentage = (head_count * 100) / iNo;      //percentage calculating
-            Console.WriteLine("Tail={0}% and Head={1}%", tail_percentage, head_percentage);
+
+            this.tail_percentage1 = tail_percentage;
+            this.head_percentage1 = head_percentage;
         }
     }
 }

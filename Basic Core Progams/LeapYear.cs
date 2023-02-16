@@ -8,15 +8,13 @@ namespace Basic_Core_Progams
 {
     internal class LeapYear
     {
-        public static void getLeapYear()                     //Created method
+        public bool flag;
+        public void chkLeapYear(int iYr)                     //Created method
         {
-            Console.Write("Please enter year :");                          //Getting user input
-            int iYr = Convert.ToInt32(Console.ReadLine());
-
             if (((iYr % 4 == 0) && (iYr % 100 != 0)) || (iYr % 400 == 0))         //Giving conditions to check
-            { Console.WriteLine("The {0} is leap year", iYr); }
+            { this.flag = true;  }
             else
-            { Console.WriteLine("The {0} is not leap year",iYr);}
+            { this.flag = false; }
         }
     }
 }
